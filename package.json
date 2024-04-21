@@ -6,13 +6,18 @@
   "author": "Chris Griffing",
   "scripts": {
     "dev": "plasmo dev",
-    "build": "plasmo build",
+    "build:chrome": "plasmo build --target=chrome-mv3",
+    "build:firefox": "plasmo build --target=firefox-mv3",
+    "build:edge": "plasmo build --target=edge-mv3",
+    "build:brave": "plasmo build --target=brave-mv3",
+    "build:opera": "plasmo build --target=opera-mv3",
+    "DISABLED:build:safari": "xcrun safari-web-extension-converter build/chrome-mv3-prod",
+    "build": "pnpm run \"/^build:.*/\"",
     "package:chrome": "plasmo package --target=chrome-mv3",
     "package:firefox": "plasmo package --target=firefox-mv3",
     "package:edge": "plasmo package --target=edge-mv3",
     "package:brave": "plasmo package --target=brave-mv3",
     "package:opera": "plasmo package --target=opera-mv3",
-    "package:safari": "xcrun safari-web-extension-converter build/chrome-mv3-prod",
     "package": "pnpm run \"/^package:.*/\""
   },
   "dependencies": {
