@@ -21,7 +21,7 @@
     "package": "pnpm run \"/^package:.*/\""
   },
   "dependencies": {
-    "plasmo": "0.85.2"
+    "plasmo": "0.89.4"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "4.1.1",
